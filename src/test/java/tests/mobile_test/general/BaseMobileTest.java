@@ -25,6 +25,8 @@ public abstract class BaseMobileTest {
         Configuration.pageLoadTimeout = 40000;//было 60
         System.setProperty("chromeoptions.mobileEmulation", "deviceName=Nexus 5");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        System.setProperty("chromeoptions.args", "\"--no-sandbox\",\"--disable-dev-shm-usage\",\"--remote-debugging-port=9222\"");
+
     }
 
 
