@@ -3,8 +3,6 @@ package pages.mobile_pages;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import pages.desktop_pages.DesktopAboutBankPage;
-
 import static com.codeborne.selenide.Selenide.$;
 
 
@@ -80,6 +78,5 @@ public class MobileAboutBankPage {
         $(familyMortgage).click();
         return this;
     }
-
 
 }

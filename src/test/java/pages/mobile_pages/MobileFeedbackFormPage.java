@@ -3,9 +3,7 @@ package pages.mobile_pages;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-
 import java.io.File;
-
 import static com.codeborne.selenide.Selenide.*;
 
 public class MobileFeedbackFormPage {
@@ -38,7 +36,6 @@ public class MobileFeedbackFormPage {
         return this;
     }
 
-
     @Step("Проверяем, что только 1 файл готов к загрузке")
     public MobileFeedbackFormPage checkCorrectnessOfFiles() {
         $(invalidFile).shouldBe(Condition.exist);
@@ -46,6 +43,5 @@ public class MobileFeedbackFormPage {
         $(normalFile).shouldBe(Condition.exist);
         return this;
     }
-
 
 }

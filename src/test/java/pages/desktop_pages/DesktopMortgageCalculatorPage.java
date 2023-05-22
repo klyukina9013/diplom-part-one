@@ -41,7 +41,7 @@ public class DesktopMortgageCalculatorPage {
         return this;
     }
 
-    @Step("Выбираем город приобретенной недвижимости - «Москва»")
+    @Step("Выбираем город приобретенной недвижимости - {clientData.getTown()}")
     public DesktopMortgageCalculatorPage selectTown() {
         $(townField).sendKeys(clientData.getTown());
         $(specificTown).click();

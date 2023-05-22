@@ -26,7 +26,7 @@ public class PropertyVariantsPage {
         return this;
     }
 
-    @Step("Выбираем первую карточку")
+    @Step("Выбираем карточку")
     public PropertyVariantsPage selectCard() {
         $(countOfOffers).shouldBe(Condition.exist);
         $(firstCard).click();

@@ -10,13 +10,10 @@ public class CommonFamilyMortgagePage {
 
     private final By incorrectAge = By.xpath("//div[contains(text(), \"не менее\")]");
 
-
     @Step("Проверяем, что данные некорректно заполнены")
     public CommonFamilyMortgagePage checkCorrectnessData() {
         $(incorrectAge).shouldBe(Condition.exist);
         return this;
     }
-
-
 
 }

@@ -11,8 +11,6 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class MobileSpecificPropertyPage {
 
-
-
     ObjectMapper objectMapper = new ObjectMapper();
     File clientDataJsonfile = new File("src/test/java/resources/clientData.json");
     ClientData clientData;

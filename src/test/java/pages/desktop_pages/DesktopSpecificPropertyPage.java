@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import models.ClientData;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -55,7 +54,5 @@ public class DesktopSpecificPropertyPage {
         $(error).shouldBe(Condition.exist);
         return this;
     }
-
-
 
 }

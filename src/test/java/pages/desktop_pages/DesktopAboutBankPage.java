@@ -21,7 +21,6 @@ public class DesktopAboutBankPage {
     @Step("Выбираем «Ипотечный калькулятор» в разделе «Ипотека»")
     public DesktopAboutBankPage openCalculator() {
         $(sectionMortgage).click();
-      //  $(mortgageCalculator).click();
         return this;
     }
 
@@ -31,8 +30,6 @@ public class DesktopAboutBankPage {
         $(programmes).click();
         $(nameOfCredit).scrollTo();
         $(aboutCredit).click();
-      //  $(sectionMortgage).hover();
-      //  $(familyMortgageSection).click();
         return this;
     }
 

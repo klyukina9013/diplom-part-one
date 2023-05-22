@@ -2,8 +2,6 @@ package pages.common_pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import pages.desktop_pages.DesktopAboutBankPage;
-
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static tests.desktop_test.general.BaseTest.config;

@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import models.ClientData;
 import java.io.File;
 import java.io.IOException;
-
 import static com.codeborne.selenide.Selenide.$;
 import static org.openqa.selenium.Keys.BACK_SPACE;
 import static org.openqa.selenium.Keys.CONTROL;
@@ -41,7 +40,7 @@ public class MobileMortgageCalculatorPage {
         return this;
     }
 
-    @Step("Выбираем город приобретенной недвижимости - «Москва»")
+    @Step("Выбираем город приобретенной недвижимости - {clientData.getTown()}")
     public MobileMortgageCalculatorPage selectTown() {
         $(townField).sendKeys(clientData.getTown());
         $(specificTown).click();
