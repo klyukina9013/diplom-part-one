@@ -1,4 +1,4 @@
-name: Run Booking tests
+name: Run MTSBank tests
 
 on:
   push
