@@ -15,9 +15,9 @@ import tests.mobile_test.general.BaseMobileTest;
 
 class PassExamMobTest extends BaseMobileTest {
 
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
-    RulesOfSafetyPage rulesOfSafetyPage = new RulesOfSafetyPage();
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
+    private RulesOfSafetyPage rulesOfSafetyPage = new RulesOfSafetyPage();
 
     @Test
     void mobPassingExamTest() {

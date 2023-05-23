@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class DesktopMortgageCalculatorPage {
 
-
     ObjectMapper objectMapper = new ObjectMapper();
     File clientDataJsonfile = new File("src/test/java/resources/clientData.json");
     ClientData clientData;
@@ -32,7 +31,6 @@ public class DesktopMortgageCalculatorPage {
     private final By yearsOfCredit = By.xpath("//div[@label=\"Срок кредита\"]/input");
 
 
-    //desktop
     @Step("Выбираем цель кредита - «Получение денег»")
     public DesktopMortgageCalculatorPage selectPurpose() {
         $(titleText).scrollTo();

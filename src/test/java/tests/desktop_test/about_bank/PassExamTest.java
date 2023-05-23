@@ -19,8 +19,8 @@ import tests.desktop_test.general.BaseTest;
 
 class PassExamTest extends BaseTest {
 
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    RulesOfSafetyPage rulesOfSafetyPage = new RulesOfSafetyPage();
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private RulesOfSafetyPage rulesOfSafetyPage = new RulesOfSafetyPage();
 
     @Test
     void passingExamTest() {

@@ -17,9 +17,7 @@
         <allure.version>2.21.0</allure.version>
     </properties>
 
-
     <dependencies>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>

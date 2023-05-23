@@ -18,12 +18,11 @@ import tests.desktop_test.general.BaseTest;
 @Link(name = "Тестируемый сервис", url = "https://www.mtsbank.ru/")
 class ConnectWithSupportTest extends BaseTest {
 
-        CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-        DesktopAboutBankPage desktopAboutBankPage = new DesktopAboutBankPage();
-        BusinessEthicsPage businessEthicsPage = new BusinessEthicsPage();
-        DesktopFeedbackFormPage feedbackFormPage = new DesktopFeedbackFormPage();
+        private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+        private DesktopAboutBankPage desktopAboutBankPage = new DesktopAboutBankPage();
+        private BusinessEthicsPage businessEthicsPage = new BusinessEthicsPage();
+        private DesktopFeedbackFormPage feedbackFormPage = new DesktopFeedbackFormPage();
 
-        //@Test
         @ParameterizedTest
         @ValueSource(strings = {"src/main/resources/testData/voiceTest.mp3", "src/main/resources/testData/textTest.docx", "src/main/resources/testData/datasetTest.csv"})
         void connectingSupportTest(String name){

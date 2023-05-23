@@ -15,10 +15,10 @@ import tests.mobile_test.general.BaseMobileTest;
 
 class FamilyMortgageMobTest extends BaseMobileTest {
 
-    MobileFamilyMortgagePage familyMortgagePage = new MobileFamilyMortgagePage();
-    MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    CommonFamilyMortgagePage commonFamilyMortgagePage = new CommonFamilyMortgagePage();
+    private MobileFamilyMortgagePage familyMortgagePage = new MobileFamilyMortgagePage();
+    private MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private CommonFamilyMortgagePage commonFamilyMortgagePage = new CommonFamilyMortgagePage();
 
     @Test
     void mobFamilyMortgageTest() {

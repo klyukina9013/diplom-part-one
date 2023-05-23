@@ -19,10 +19,11 @@ import tests.desktop_test.general.BaseTest;
 
 class FamilyMortgageTest extends BaseTest {
 
-    DesktopAboutBankPage desktopAboutBankPage = new DesktopAboutBankPage();
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    DesktopFamilyMortgagePage familyMortgagePage = new DesktopFamilyMortgagePage();
-    CommonFamilyMortgagePage commonFamilyMortgagePage = new CommonFamilyMortgagePage();
+    private DesktopAboutBankPage desktopAboutBankPage = new DesktopAboutBankPage();
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private DesktopFamilyMortgagePage familyMortgagePage = new DesktopFamilyMortgagePage();
+    private CommonFamilyMortgagePage commonFamilyMortgagePage = new CommonFamilyMortgagePage();
+
 
     @Test
     void familyMortgageTest() {

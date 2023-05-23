@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import models.ClientData;
 import java.io.File;
 import java.io.IOException;
-
 import static com.codeborne.selenide.Selenide.$;
 
 public class DesktopSpecificPropertyPage {

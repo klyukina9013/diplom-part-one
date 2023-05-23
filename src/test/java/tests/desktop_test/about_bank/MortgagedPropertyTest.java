@@ -5,7 +5,6 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
-import pages.*;
 import pages.common_pages.CommonAboutBankPage;
 import pages.common_pages.CommonSpecificPropertyPage;
 import pages.common_pages.MortgagedPropertyPage;
@@ -23,12 +22,12 @@ import tests.desktop_test.general.BaseTest;
 class MortgagedPropertyTest extends BaseTest {
 
 
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    DesktopAboutBankPage desktopAboutBankPage = new DesktopAboutBankPage();
-    MortgagedPropertyPage mortgagedPropertyPage = new MortgagedPropertyPage();
-    PropertyVariantsPage propertyVariantsPage = new PropertyVariantsPage();
-    DesktopSpecificPropertyPage desktopSpecificPropertyPage = new DesktopSpecificPropertyPage();
-    CommonSpecificPropertyPage commonSpecificPropertyPage = new CommonSpecificPropertyPage();
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private DesktopAboutBankPage desktopAboutBankPage = new DesktopAboutBankPage();
+    private MortgagedPropertyPage mortgagedPropertyPage = new MortgagedPropertyPage();
+    private PropertyVariantsPage propertyVariantsPage = new PropertyVariantsPage();
+    private DesktopSpecificPropertyPage desktopSpecificPropertyPage = new DesktopSpecificPropertyPage();
+    private CommonSpecificPropertyPage commonSpecificPropertyPage = new CommonSpecificPropertyPage();
 
     @Test
     void mortgagedPropertyTest() {

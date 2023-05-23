@@ -16,11 +16,10 @@ import tests.mobile_test.general.BaseMobileTest;
 
 class MortgageCalculatorMobTest extends BaseMobileTest {
 
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    MobileMortgageCalculatorPage mortgageCalculatorPage = new MobileMortgageCalculatorPage();
-    MobileMortgageSchedulePage schedulePage = new MobileMortgageSchedulePage();
-    MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
-
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private MobileMortgageCalculatorPage mortgageCalculatorPage = new MobileMortgageCalculatorPage();
+    private MobileMortgageSchedulePage schedulePage = new MobileMortgageSchedulePage();
+    private MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
 
     @ParameterizedTest
     @ValueSource(strings = {"8", "5"})

@@ -14,10 +14,10 @@ import tests.mobile_test.general.BaseMobileTest;
 @Link(name = "Тестируемый сервис", url = "https://www.mtsbank.ru/")
 class ConnectWithSupportMobTest extends BaseMobileTest {
 
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
-    BusinessEthicsPage businessEthicsPage = new BusinessEthicsPage();
-    MobileFeedbackFormPage feedbackFormPage = new MobileFeedbackFormPage();
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
+    private BusinessEthicsPage businessEthicsPage = new BusinessEthicsPage();
+    private MobileFeedbackFormPage feedbackFormPage = new MobileFeedbackFormPage();
 
 
     @Test

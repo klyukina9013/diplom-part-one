@@ -2,7 +2,6 @@ package tests.mobile_test.about_bank;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.Test;
-import pages.*;
 import pages.common_pages.CommonAboutBankPage;
 import pages.common_pages.CommonSpecificPropertyPage;
 import pages.common_pages.MortgagedPropertyPage;
@@ -18,12 +17,12 @@ import tests.mobile_test.general.BaseMobileTest;
 
 class MortgagedPropertyMobTest extends BaseMobileTest {
 
-    MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    MortgagedPropertyPage mortgagedPropertyPage = new MortgagedPropertyPage();
-    PropertyVariantsPage propertyVariantsPage = new PropertyVariantsPage();
-    MobileSpecificPropertyPage mobileSpecificPropertyPage = new MobileSpecificPropertyPage();
-    CommonSpecificPropertyPage commonSpecificPropertyPage = new CommonSpecificPropertyPage();
+    private MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private MortgagedPropertyPage mortgagedPropertyPage = new MortgagedPropertyPage();
+    private PropertyVariantsPage propertyVariantsPage = new PropertyVariantsPage();
+    private MobileSpecificPropertyPage mobileSpecificPropertyPage = new MobileSpecificPropertyPage();
+    private CommonSpecificPropertyPage commonSpecificPropertyPage = new CommonSpecificPropertyPage();
 
 
     @Test

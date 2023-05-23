@@ -20,10 +20,11 @@ import tests.desktop_test.general.BaseTest;
 
 class MortgageCalculatorTest extends BaseTest {
 
-    DesktopAboutBankPage desktopAboutBankPage = new DesktopAboutBankPage();
-    CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
-    DesktopMortgageCalculatorPage calculatorPage = new DesktopMortgageCalculatorPage();
-    DesktopMortgageSchedulePage schedulePage = new DesktopMortgageSchedulePage();
+    private DesktopAboutBankPage desktopAboutBankPage = new DesktopAboutBankPage();
+    private CommonAboutBankPage commonAboutBankPage = new CommonAboutBankPage();
+    private DesktopMortgageCalculatorPage calculatorPage = new DesktopMortgageCalculatorPage();
+    private DesktopMortgageSchedulePage schedulePage = new DesktopMortgageSchedulePage();
+
 
     @ParameterizedTest
     @ValueSource(strings = {"8", "5"})

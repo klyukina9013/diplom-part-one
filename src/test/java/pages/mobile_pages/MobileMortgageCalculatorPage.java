@@ -12,7 +12,6 @@ import static org.openqa.selenium.Keys.CONTROL;
 
 public class MobileMortgageCalculatorPage {
 
-
     ObjectMapper objectMapper = new ObjectMapper();
     File clientDataJsonfile = new File("src/test/java/resources/clientData.json");
     ClientData clientData;

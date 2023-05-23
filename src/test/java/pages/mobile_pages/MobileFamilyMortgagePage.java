@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class MobileFamilyMortgagePage {
 
-
     ObjectMapper objectMapper = new ObjectMapper();
     File clientDataJsonfile = new File("src/test/java/resources/clientData.json");
     ClientData clientData;
