@@ -9,6 +9,7 @@ import static tests.desktop_test.general.BaseTest.config;
 public class CommonAboutBankPage {
 
     private final By clients = By.xpath("//div[text()=\"Клиентам\"]");
+    private final By beTheBest = By.xpath("//h3[contains(text(), \"Быть лучшим\")]");
     private final By rulesOfSafety = By
             .xpath("//div[@class=\"sc-higWrZ cuyctx\"]//div[text()=\"Правила безопасности\"]/parent::a | //div[@class=\"sc-ehSDrC cRfBar\"]//div[text()=\"Правила безопасности\"]/parent::a");
 
@@ -20,7 +21,7 @@ public class CommonAboutBankPage {
 
     @Step("Выбираем «Правила безопасности» в разделе «Клиентам»")
     public CommonAboutBankPage openForClients() {
-        $(clients).scrollTo();
+        $(beTheBest).scrollTo();
         $(clients).click();
         $(rulesOfSafety).click();
         return this;

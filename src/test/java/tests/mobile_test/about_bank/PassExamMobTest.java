@@ -23,7 +23,6 @@ class PassExamMobTest extends BaseMobileTest {
     void mobPassingExamTest() {
 
         commonAboutBankPage.openPage();
-        mobileAboutBankPage.openMTSBank();
         commonAboutBankPage.openForClients();
         rulesOfSafetyPage.chooseVariants()
                 .checkResults();

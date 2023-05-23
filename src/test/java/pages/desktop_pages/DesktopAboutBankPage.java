@@ -7,7 +7,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class DesktopAboutBankPage {
 
-    private final By aboutBank = By.xpath("//div[@class=\"sc-gTgzoy ePrRjm\"]/div");
+   // private final By aboutBank = By.xpath("//div[@class=\"sc-gTgzoy ePrRjm\"]/div");
+    private final By aboutBank = By.xpath("//div[@class=\"sc-laRQdt kGNupk\"]/div");
     private final By career = By.xpath("//div[text()=\"Карьера\"]");
     private final By mortgagedProperty = By.xpath("//a[@href=\"https://www.mtsbank.ru/o-banke/realizacia-aktivov/\"]");
     private final By businessEthics = By.xpath("//a[@href=\"https://www.mtsbank.ru/o-banke/protivodeystvie-narusheniyam/\"]");
