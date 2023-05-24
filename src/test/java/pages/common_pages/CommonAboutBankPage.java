@@ -11,7 +11,7 @@ public class CommonAboutBankPage {
     private final By clients = By.xpath("//div[text()=\"Клиентам\"]");
     private final By beTheBest = By.xpath("//h3[contains(text(), \"Быть лучшим\")]");
     private final By rulesOfSafety = By
-            .xpath("//div[@class=\"sc-higWrZ cuyctx\"]//div[text()=\"Правила безопасности\"]/parent::a | //div[@class=\"sc-ehSDrC cRfBar\"]//div[text()=\"Правила безопасности\"]/parent::a");
+            .xpath("//div[text()=\"Правила безопасности\"]/parent::a");
 
     @Step("Открываем сайт МТС Банка")
     public CommonAboutBankPage openPage() {
