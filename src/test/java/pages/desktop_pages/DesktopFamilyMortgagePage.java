@@ -4,12 +4,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.qameta.allure.Step;
 import models.ClientData;
 import org.openqa.selenium.By;
+import resources.RandomDateOfBirth;
+
 import java.io.File;
 import java.io.IOException;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class DesktopFamilyMortgagePage {
+
+    RandomDateOfBirth randomDateOfBirth = new RandomDateOfBirth();
 
     ObjectMapper objectMapper = new ObjectMapper();
     File clientDataJsonfile = new File("src/test/java/resources/clientData.json");
@@ -32,9 +36,11 @@ public class DesktopFamilyMortgagePage {
 
     @Step("Заполняем персональные данные")
     public DesktopFamilyMortgagePage fillInApplicationForm() {
+        String birth = randomDateOfBirth.randomBirthday().toString();
         $(personalData).scrollTo();
         $(fullName).sendKeys(clientData.getFullName());
-        $(date).sendKeys(clientData.getBirthday());
+      //  $(date).sendKeys(clientData.getBirthday());
+        $(date).sendKeys(birth);
         $(telNumber).sendKeys(clientData.getTelephone());
         $(eMail).sendKeys(clientData.getEmail());
         $(region).sendKeys(clientData.getTown());
