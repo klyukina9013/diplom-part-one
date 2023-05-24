@@ -4,6 +4,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.common_pages.CommonAboutBankPage;
 import pages.common_pages.CommonSpecificPropertyPage;
@@ -30,6 +31,7 @@ class MortgagedPropertyTest extends BaseTest {
     private CommonSpecificPropertyPage commonSpecificPropertyPage = new CommonSpecificPropertyPage();
 
     @Test
+    @DisplayName("Проверяем форму заявки в разделе «Реализуемое имущество»")
     void mortgagedPropertyTest() {
 
         commonAboutBankPage.openPage();

@@ -1,6 +1,7 @@
 package tests.mobile_test.about_bank;
 
 import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.common_pages.BusinessEthicsPage;
 import pages.common_pages.CommonAboutBankPage;
@@ -21,6 +22,7 @@ class ConnectWithSupportMobTest extends BaseMobileTest {
 
 
     @Test
+    @DisplayName("Проверяем обработку файлов при обращении в службу поддержки")
     void mobConnectingSupportTest(){
 
         commonAboutBankPage.openPage();

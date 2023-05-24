@@ -4,6 +4,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.common_pages.CommonAboutBankPage;
 import pages.common_pages.CommonFamilyMortgagePage;
@@ -26,6 +27,7 @@ class FamilyMortgageTest extends BaseTest {
 
 
     @Test
+    @DisplayName("Проверяем форму заявки на ипотеку на ввод некорректных данных")
     void familyMortgageTest() {
 
         commonAboutBankPage.openPage();

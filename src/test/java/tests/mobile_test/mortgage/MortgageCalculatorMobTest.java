@@ -1,6 +1,7 @@
 package tests.mobile_test.mortgage;
 
 import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.common_pages.CommonAboutBankPage;
@@ -22,6 +23,7 @@ class MortgageCalculatorMobTest extends BaseMobileTest {
     private MobileAboutBankPage mobileAboutBankPage = new MobileAboutBankPage();
 
     @ParameterizedTest
+    @DisplayName("Проверяем взаимодействие ипотечного калькулятора и графика платежей")
     @ValueSource(strings = {"8", "5"})
     void mobMonthlyPaymentTest(String strings) {
 

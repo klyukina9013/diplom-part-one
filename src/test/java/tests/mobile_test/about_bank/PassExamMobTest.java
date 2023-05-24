@@ -1,6 +1,7 @@
 package tests.mobile_test.about_bank;
 
 import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.*;
 import pages.common_pages.CommonAboutBankPage;
@@ -20,6 +21,7 @@ class PassExamMobTest extends BaseMobileTest {
     private RulesOfSafetyPage rulesOfSafetyPage = new RulesOfSafetyPage();
 
     @Test
+    @DisplayName("Проверяем обработку результатов теста «Обмани мошенника»")
     void mobPassingExamTest() {
 
         commonAboutBankPage.openPage();

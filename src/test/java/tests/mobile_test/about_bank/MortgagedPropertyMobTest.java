@@ -1,6 +1,7 @@
 package tests.mobile_test.about_bank;
 
 import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.common_pages.CommonAboutBankPage;
 import pages.common_pages.CommonSpecificPropertyPage;
@@ -26,6 +27,7 @@ class MortgagedPropertyMobTest extends BaseMobileTest {
 
 
     @Test
+    @DisplayName("Проверяем форму заявки в разделе «Реализуемое имущество»")
     void mobMortgagedPropertyTest() {
 
         commonAboutBankPage.openPage();

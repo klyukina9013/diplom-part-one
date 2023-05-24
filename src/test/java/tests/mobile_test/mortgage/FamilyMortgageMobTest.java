@@ -1,6 +1,7 @@
 package tests.mobile_test.mortgage;
 
 import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.common_pages.CommonAboutBankPage;
 import pages.mobile_pages.MobileAboutBankPage;
@@ -21,6 +22,7 @@ class FamilyMortgageMobTest extends BaseMobileTest {
     private CommonFamilyMortgagePage commonFamilyMortgagePage = new CommonFamilyMortgagePage();
 
     @Test
+    @DisplayName("Проверяем форму заявки на ипотеку на ввод некорректных данных")
     void mobFamilyMortgageTest() {
 
         commonAboutBankPage.openPage();

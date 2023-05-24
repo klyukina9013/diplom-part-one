@@ -4,6 +4,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.*;
 import pages.common_pages.CommonAboutBankPage;
@@ -23,6 +24,7 @@ class PassExamTest extends BaseTest {
     private RulesOfSafetyPage rulesOfSafetyPage = new RulesOfSafetyPage();
 
     @Test
+    @DisplayName("Проверяем обработку результатов теста «Обмани мошенника»")
     void passingExamTest() {
 
         commonAboutBankPage.openPage()

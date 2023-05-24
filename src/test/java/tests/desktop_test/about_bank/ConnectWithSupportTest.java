@@ -4,6 +4,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.common_pages.BusinessEthicsPage;
@@ -24,6 +25,7 @@ class ConnectWithSupportTest extends BaseTest {
         private DesktopFeedbackFormPage feedbackFormPage = new DesktopFeedbackFormPage();
 
         @ParameterizedTest
+        @DisplayName("Проверяем обработку файлов при обращении в службу поддержки")
         @ValueSource(strings = {"src/main/resources/testData/voiceTest.mp3", "src/main/resources/testData/textTest.docx", "src/main/resources/testData/datasetTest.csv"})
         void connectingSupportTest(String name){
                 commonAboutBankPage.openPage();
