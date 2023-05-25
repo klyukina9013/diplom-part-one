@@ -26,7 +26,7 @@ class ConnectWithSupportMobTest extends BaseMobileTest {
     void mobConnectingSupportTest(){
 
         commonAboutBankPage.openPage();
-        mobileAboutBankPage.chooseCity()
+        mobileAboutBankPage //.chooseCity()
                 .openBusinessEthics();
         businessEthicsPage.openFeedbackForm();
         feedbackFormPage.uploadCSVFile()

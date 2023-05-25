@@ -26,7 +26,7 @@ class FamilyMortgageMobTest extends BaseMobileTest {
     void mobFamilyMortgageTest() {
 
         commonAboutBankPage.openPage();
-        mobileAboutBankPage.chooseCity()
+        mobileAboutBankPage//.chooseCity()
                 .openFamilyMortgageInMenu();
         familyMortgagePage.fillInApplicationForm();
         commonFamilyMortgagePage.checkCorrectnessData();

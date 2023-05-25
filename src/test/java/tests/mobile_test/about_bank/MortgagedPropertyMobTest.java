@@ -31,7 +31,7 @@ class MortgagedPropertyMobTest extends BaseMobileTest {
     void mobMortgagedPropertyTest() {
 
         commonAboutBankPage.openPage();
-        mobileAboutBankPage.chooseCity()
+        mobileAboutBankPage//.chooseCity()
                 .openMortgagedProperty();
         mortgagedPropertyPage.selectCategoryOfProperty()
                 .pressFindButton();

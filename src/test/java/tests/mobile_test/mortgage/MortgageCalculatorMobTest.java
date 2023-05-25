@@ -28,7 +28,7 @@ class MortgageCalculatorMobTest extends BaseMobileTest {
     void mobMonthlyPaymentTest(String strings) {
 
         commonAboutBankPage.openPage();
-        mobileAboutBankPage.chooseCity()
+        mobileAboutBankPage//.chooseCity()
                 .openCalculatorInMenu();
         mortgageCalculatorPage.selectPurpose()
                 .selectTown()
