@@ -8,6 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
 public abstract class BaseTest {
@@ -25,13 +26,18 @@ public abstract class BaseTest {
         Configuration.timeout = 15000;
         Configuration.pageLoadTimeout = 60000;
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        System.setProperty("chromeoptions.args", "\"--no-sandbox\",\"--disable-dev-shm-usage\",\"--remote-debugging-port=9222\"");
+      //  System.setProperty("chromeoptions.args", "\"--no-sandbox\",\"--disable-dev-shm-usage\",\"--remote-debugging-port=9222\"");
+    }
+
+    @AfterEach
+    public void cleanUp() {
+        Selenide.clearBrowserLocalStorage();
+        Selenide.clearBrowserCookies();
     }
 
 
     @AfterAll
     public static void turnDown() {
-        Selenide.clearBrowserCookies();
         Selenide.closeWebDriver();
     }
 }
