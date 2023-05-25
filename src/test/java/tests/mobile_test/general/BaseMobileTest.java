@@ -31,11 +31,7 @@ public abstract class BaseMobileTest {
 
     }
 
-    @AfterEach
-    public static void cleanUp() {
-        Selenide.clearBrowserLocalStorage();
-        Selenide.clearBrowserCookies();
-    }
+
 
     @AfterAll
     public static void turnDown() {

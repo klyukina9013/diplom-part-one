@@ -29,11 +29,6 @@ public abstract class BaseTest {
         System.setProperty("chromeoptions.args", "\"--no-sandbox\",\"--disable-dev-shm-usage\",\"--remote-debugging-port=9222\"");
     }
 
-    @AfterEach
-    public void cleanUp() {
-        Selenide.clearBrowserLocalStorage();
-        Selenide.clearBrowserCookies();
-    }
 
 
     @AfterAll
